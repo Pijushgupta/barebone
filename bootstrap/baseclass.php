@@ -10,8 +10,10 @@ class baseclass{
 	}
         
 	function model(){
+            echo "Hello from model";
 	}
         
 	function lib(){	
+            echo "hello from model";
 	}
 }
