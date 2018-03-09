@@ -1,5 +1,5 @@
 <?php
-
+define();
 class baseclass{
         
 	function __construct(){
