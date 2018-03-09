@@ -80,18 +80,18 @@ class bootstrap
 						$controller_app->index();
 
 					}else{
-						echo "No such method Exists";
+						echo "No such method Exists!";
 					}
 				}
 			}else{
 
-				echo "No such Class found";
+				echo "No such Class found!";
 			}
 			
 
 		}else{
 
-			echo "No such Controller";
+			echo "No such Controller found!";
 		}
 
 
