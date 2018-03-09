@@ -22,7 +22,8 @@ class bootstrap
 		/*first argument of the array $url treated as controller name*/
 		if($url[0] == 'index.php'){
 
-			/*fallback controller name, change it to change fallback controller*/
+			/*fallback controller name, change it to change fallback
+                         *  controller*/
 			$url[0] = DEFAULT_CONTROLLER;
 		}
 		$controller_name = $url[0];
@@ -37,7 +38,9 @@ class bootstrap
 			$method_name = $url[1];
 		}else{
 			
-			/*fallback method name, it will automatically redirect to index method. Don't change it, otherwise it will not gonna look for index method*/
+			/*fallback method name, it will automatically redirect 
+                         * to index method. Don't change it, otherwise it will 
+                         * not gonna look for index method*/
 			$method_name = '' ;
 		}
 
