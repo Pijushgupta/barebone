@@ -6,7 +6,7 @@ class baseclass{
 	}
 
 	function view(){
-            echo "Hello from view";
+            echo "Hello from view"; 
 	}
         
 	function model(){
