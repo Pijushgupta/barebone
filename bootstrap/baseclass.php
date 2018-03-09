@@ -1,5 +1,5 @@
 <?php
-define();
+require_once 'config.php';
 class baseclass{
         
 	function __construct(){
