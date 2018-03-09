@@ -23,6 +23,7 @@ class baseclass{
                 if(file_exists($model_file)){
                     include $model_file;
                     $$m_args = new $m_args;
+                         
                 }
             }else{
                 return false;

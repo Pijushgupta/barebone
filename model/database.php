@@ -1,7 +1,7 @@
 <?php
 
 
-class database extends baseclass{
+class database {
     
     
     function getdata(){
