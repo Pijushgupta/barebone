@@ -9,6 +9,9 @@ class bootstrap
 
 		/*change this to use diffrent directory for controller*/
 		define("CONTROLLER_PATH","controller/");
+                
+                /*change this to use diffrent default controller*/
+                define("DEFAULT_CONTROLLER","welcome");
 
 		/*removing the tailing forward slash*/
 		$url = rtrim($_GET['url'],'/');
@@ -19,8 +22,8 @@ class bootstrap
 		/*first argument of the array $url treated as controller name*/
 		if($url[0] == 'index.php'){
 
-			/*fallback controller name, change it change fallback controller*/
-			$url[0] = 'welcome';
+			/*fallback controller name, change it to change fallback controller*/
+			$url[0] = DEFAULT_CONTROLLER;
 		}
 		$controller_name = $url[0];
 		
