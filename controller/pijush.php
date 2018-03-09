@@ -6,6 +6,7 @@ class pijush extends baseclass{
     }
     
     function index(){
-        $this->view('view');
+        $this->model('database');
+        $this->database->getdata();
     }
 }

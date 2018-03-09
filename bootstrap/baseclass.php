@@ -22,12 +22,14 @@ class baseclass{
                 $model_file = MODEL_PATH . $m_args . '.php';
                 if(file_exists($model_file)){
                     include $model_file;
-                    $model
+                    $$m_args = new $m_args;
                 }
             }else{
                 return false;
             }
 	}
+        
+        
         
 	function lib($l_args=null){	
             echo "hello from model";
