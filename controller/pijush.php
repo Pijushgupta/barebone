@@ -6,6 +6,6 @@ class pijush extends baseclass{
     }
     
     function index(){
-        $this->view();
+        $this->view('view');
     }
 }

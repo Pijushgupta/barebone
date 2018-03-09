@@ -18,7 +18,15 @@ class baseclass{
 	}
         
 	function model($m_args=null){
-            echo "Hello from model";
+            if($m_args!=null){
+                $model_file = MODEL_PATH . $m_args . '.php';
+                if(file_exists($model_file)){
+                    include $model_file;
+                    $model
+                }
+            }else{
+                return false;
+            }
 	}
         
 	function lib($l_args=null){	
